@@ -13,7 +13,20 @@
 
     <link rel="stylesheet" href="./src/style.css" />
   </head>
-  <body>
-    <h1>Login/Registration</h1>
+  <body class="flex w-80 flex-col items-center gap-4 rounded border p-4">
+    <h1 class="my-6 text-3xl font-bold text-red-50">Login/Registration</h1>
+
+    <form>
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" name="" id="username" placeholder="Username" />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="text" name="" id="password" placeholder="Password" />
+      </div>
+
+      <button type="submit" class="bg-pink rounded">Submit</button>
+    </form>
   </body>
 </html>
