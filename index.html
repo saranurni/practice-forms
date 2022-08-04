@@ -14,19 +14,31 @@
     <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body class="flex w-80 flex-col items-center gap-4 rounded border p-4">
-    <h1 class="my-6 text-3xl font-bold text-red-50">Login/Registration</h1>
+    <h1 class="my-6 text-3xl font-bold text-red-700">Login/Registration</h1>
 
     <form>
       <div>
         <label for="username">Username:</label>
-        <input type="text" name="" id="username" placeholder="Username" />
+        <input
+          type="text"
+          name=""
+          id="username"
+          placeholder="Username"
+          autofocus
+        />
       </div>
       <div>
         <label for="password">Password:</label>
         <input type="text" name="" id="password" placeholder="Password" />
       </div>
 
-      <button type="submit" class="bg-pink rounded">Submit</button>
+      <div>
+        <input type="checkbox" id="save-username" />
+        <label for="save-username" class="not-sr-only ml-2"
+          >Save username
+        </label>
+      </div>
+      <button type="submit" class="rounded bg-green-600">Submit</button>
     </form>
   </body>
 </html>

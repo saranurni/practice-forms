@@ -2,52 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-h1 {
-  color: red;
-  text-align: center;
-}
-
-form {
-  align-items: center;
-  border: 1px solid #333;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 16px;
-  width: 320px;
-}
-
-button {
-  background-color: green;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  padding: 8px 16px;
-  transition: 0.2s;
-}
-
-button:focus,
-button:hover {
-  background-color: #00ff00;
-  cursor: pointer;
-  transform: scale(1.05) translateY(-2px);
-}
-
 label {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+  @apply sr-only;
+}
+
+input {
+  @apply rounded border pl-2;
 }
