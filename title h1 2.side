@@ -1,0 +1,94 @@
+{
+  "id": "c0014fbb-e81f-49a4-b907-2078453fe900",
+  "version": "2.0",
+  "name": "Login/Registration",
+  "url": "https://62ec0385ac35f80ef5d93bd2--resplendent-klepon-31f97d.netlify.app",
+  "tests": [{
+    "id": "92c274fc-5ddc-4967-9bb5-e44ec28ee083",
+    "name": "Title h1",
+    "commands": [{
+      "id": "070601a4-2d19-4866-a922-2da82355a212",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f53f2798-b9f0-4289-9973-41ceac619eca",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Login/Registration",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57afd9fb-aa5f-4e0a-8d43-b9a8536e0ed3",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba6638c5-557a-426e-86a2-fe3a64d8f22c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.my-6",
+      "targets": [
+        ["css=.my-6", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Login/Registration')]", "xpath:innerText"]
+      ],
+      "value": "Login/Registration"
+    }]
+  }, {
+    "id": "76665167-d533-40ad-9dd0-adbf527f60de",
+    "name": "Title h1* vars",
+    "commands": [{
+      "id": "6fcbeb40-3c71-4eff-8fca-7df86b725613",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c2eb521-463a-41a9-be73-96a79d61fd43",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "title"
+    }, {
+      "id": "422bcfb4-5b97-407a-963f-d08594d092e1",
+      "comment": "",
+      "command": "echo",
+      "target": "${title}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c849bc0-4b57-4633-a83d-48c1abe6e515",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.my-6",
+      "targets": [
+        ["css=.my-6", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Login/Registration')]", "xpath:innerText"]
+      ],
+      "value": "${title}"
+    }]
+  }],
+  "suites": [{
+    "id": "2596df84-ec5b-4e93-91ea-bea195e4fe9c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["92c274fc-5ddc-4967-9bb5-e44ec28ee083"]
+  }],
+  "urls": ["https://62ec0385ac35f80ef5d93bd2--resplendent-klepon-31f97d.netlify.app/"],
+  "plugins": []
+}

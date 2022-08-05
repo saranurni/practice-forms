@@ -1,0 +1,54 @@
+{
+  "id": "c0014fbb-e81f-49a4-b907-2078453fe900",
+  "version": "2.0",
+  "name": "Login/Registration",
+  "url": "https://62ec0385ac35f80ef5d93bd2--resplendent-klepon-31f97d.netlify.app",
+  "tests": [{
+    "id": "92c274fc-5ddc-4967-9bb5-e44ec28ee083",
+    "name": "Title h1",
+    "commands": [{
+      "id": "070601a4-2d19-4866-a922-2da82355a212",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f53f2798-b9f0-4289-9973-41ceac619eca",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Login/Registration",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57afd9fb-aa5f-4e0a-8d43-b9a8536e0ed3",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba6638c5-557a-426e-86a2-fe3a64d8f22c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.my-4",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2596df84-ec5b-4e93-91ea-bea195e4fe9c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["92c274fc-5ddc-4967-9bb5-e44ec28ee083"]
+  }],
+  "urls": ["https://62ec0385ac35f80ef5d93bd2--resplendent-klepon-31f97d.netlify.app/"],
+  "plugins": []
+}
